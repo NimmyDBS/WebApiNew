@@ -13,6 +13,3 @@ spec:
   owner: guests
   providesApis:
     - weather-api
-links:  
-    - url: 'https://sonarqube.ey.com/dashboard?id=eyse_application_security'
-      title: 'SonarQube Dashboard'
