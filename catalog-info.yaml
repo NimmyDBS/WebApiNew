@@ -15,6 +15,8 @@ spec:
   owner: guests
   providesApis:
     - weather-api
+  implementsApis:
+    - weather-api
   links:
     - url: 'https://github.com/NimmyDBS/WebApiNew'
       title: 'GitHub Repository'
@@ -22,3 +24,5 @@ spec:
       title: 'CI/CD Pipeline'
     - url: 'https://sonarqube.ey.com/dashboard?id=eyse_application_security'
       title: 'SonarQube Dashboard'
+  dependsOn:
+    - api:default/weather-api
