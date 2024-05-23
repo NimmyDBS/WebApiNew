@@ -1,0 +1,28 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: weather-api
+  description: A .NET API providing weather forecasts
+  annotations:
+    sonarqube.org/project-key: eyse_application_security
+  owner: guests
+  tags:
+    - weather
+    - api
+spec:
+  type: service
+  lifecycle: production
+  owner: guests
+  providesApis:
+    - weather-api
+  implementsApis:
+    - weather-api
+  links:
+    - url: 'https://github.com/NimmyDBS/WebApiNew'
+      title: 'GitHub Repository'
+    - url: 'https://dev.azure.com/TC-SE-Dublin/EYSE%20Application%20Security/_build'
+      title: 'CI/CD Pipeline'
+    - url: 'https://sonarqube.ey.com/dashboard?id=eyse_application_security'
+      title: 'SonarQube Dashboard'
+  dependsOn:
+    - api:default/weather-api
