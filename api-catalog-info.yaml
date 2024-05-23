@@ -14,7 +14,7 @@ spec:
       title: Weather API
       version: 1.0.0
     paths:
-      /weatherforecast:
+      http://localhost:5054/weatherforecast:
         get:
           summary: Get the weather forecast
           responses:
