@@ -3,6 +3,8 @@ kind: Component
 metadata:
   name: weather-api
   description: A .NET API providing weather forecasts
+  annotations:
+    sonarqube.org/project-key: squ_a8dc2865fc456c3832afe2ed7e9a05aaf1b10305
   owner: guests
   tags:
     - weather
