@@ -1,0 +1,18 @@
+openapi: 3.0.0
+info:
+  title: My Web API
+  description: This is a sample Web API documentation.
+  version: 1.0.0
+paths:
+  /api/values:
+    get:
+      summary: Get all values
+      responses:
+        '200':
+          description: A list of values
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string

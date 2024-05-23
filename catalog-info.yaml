@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: weather-api
+  description: A .NET API providing weather forecasts
+  owner: guests
+  tags:
+    - weather
+    - api
+spec:
+  type: service
+  lifecycle: production
+  owner: guests
+  providesApis:
+    - weather-api
