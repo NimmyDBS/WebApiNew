@@ -1,0 +1,37 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: weather-api
+  description: API for weather forecasts
+  owner: guests
+spec:
+  type: openapi
+  lifecycle: production
+  definition: |
+    openapi: 3.0.0
+    info:
+      title: Weather API
+      version: 1.0.0
+    paths:
+      /weatherforecast:
+        get:
+          summary: Get the weather forecast
+          responses:
+            '200':
+              description: Successful response
+              content:
+                application/json:
+                  schema:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        date:
+                          type: string
+                          format: date
+                        temperatureC:
+                          type: integer
+                        temperatureF:
+                          type: integer
+                        summary:
+                          type: string
