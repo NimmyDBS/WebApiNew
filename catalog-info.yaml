@@ -13,7 +13,7 @@ spec:
   owner: guests
   providesApis:
     - weather-api
-links:
+  links:
     - url: 'https://github.com/NimmyDBS/WebApiNew'
       title: 'GitHub Repository'
     - url: 'https://dev.azure.com/TC-SE-Dublin/EYSE%20Application%20Security/_build'
