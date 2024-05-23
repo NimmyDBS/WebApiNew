@@ -13,3 +13,10 @@ spec:
   owner: guests
   providesApis:
     - weather-api
+links:
+    - url: 'https://github.com/NimmyDBS/WebApiNew'
+      title: 'GitHub Repository'
+    - url: 'https://dev.azure.com/TC-SE-Dublin/EYSE%20Application%20Security/_build'
+      title: 'CI/CD Pipeline'
+    - url: 'https://sonarqube.ey.com/dashboard?id=eyse_application_security'
+      title: 'SonarQube Dashboard'
