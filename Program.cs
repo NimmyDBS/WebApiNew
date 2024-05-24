@@ -1,18 +1,16 @@
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAllOrigins",
-        builder =>
-        {
-            builder.AllowAnyOrigin()
-                   .AllowAnyMethod()
-                   .AllowAnyHeader();
-        });
+    options.AddPolicy("AllowLocalhost3000",
+        builder => builder.AllowAnyOrigin()
+                          .AllowAnyMethod()
+                          .AllowAnyHeader());
 });
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
@@ -24,7 +22,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseCors("AllowAllOrigins");
+app.UseCors("AllowLocalhost3000");
 
 var summaries = new[]
 {
@@ -33,7 +31,7 @@ var summaries = new[]
 
 app.MapGet("/weatherforecast", () =>
 {
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
+    var forecast = Enumerable.Range(1, 5).Select(index =>
         new WeatherForecast
         (
             DateOnly.FromDateTime(DateTime.Now.AddDays(index)),

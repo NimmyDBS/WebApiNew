@@ -40,3 +40,4 @@ C:\Users\RN789TB\MyWebApi\obj\Debug\net8.0\MyWebApi.pdb
 C:\Users\RN789TB\MyWebApi\obj\Debug\net8.0\MyWebApi.genruntimeconfig.cache
 C:\Users\RN789TB\MyWebApi\obj\Debug\net8.0\ref\MyWebApi.dll
 C:\Users\RN789TB\MyWebApi\bin\Debug\net8.0\backstageapp\plugins\weather\package.json
+C:\Users\RN789TB\MyWebApi\obj\Debug\net8.0\MyWebApi.sourcelink.json
