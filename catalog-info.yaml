@@ -4,7 +4,7 @@ metadata:
   name: weather-api
   description: A .NET API providing weather forecasts
   annotations:
-    sonarqube.org/project-key: 'eyse_application_security'
+    sonarqube/project-key: 'eyse_application_security'
   owner: guests
   tags:
     - weather
