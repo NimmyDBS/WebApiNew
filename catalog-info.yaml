@@ -4,7 +4,7 @@ metadata:
   name: weather-api
   description: A .NET API providing weather forecasts
   annotations:
-    backstage.io/ci-url: https://dev.azure.com/TC-SE-Dublin/EYSE%20Application%20Security/_build
+    backstage.io/ci-url: 'https://dev.azure.com/TC-SE-Dublin/EYSE%20Application%20Security/_build'
     sonarqube.org/project-key: 'eyse_application_security'
   owner: guests
   tags:
